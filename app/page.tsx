@@ -2,6 +2,7 @@
 
 import { HeroSection } from "@/components/sections/HeroSection";
 import { LeadFunnel } from "@/components/sections/LeadFunnel";
+import { CtaFooter } from "@/components/sections/CtaFooter";
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
           );
         }}
       />
+      <CtaFooter />
     </>
   );
 }
+
