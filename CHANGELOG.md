@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Introduced `build-os/` directory to unify long-term planning
+  - Migrated `design-os/` → `build-os/designer-os/`
+  - Migrated `agent-os/` → `build-os/architect-os/`
+- Added `.agent/rules/build-os-awareness.md` to align agent behavior with build-os conventions
+- Scaffolded foundational product planning and architectural structure for design and implementation alignment
 - TrustBadges section with grayscale certification logos and hover color reveal
 - Badge assets for NSF, BBB, WQA, and HomeAdvisor certifications
 - ServiceGrid section with 3 service cards (Water Softeners, Filtration, Reverse Osmosis)
