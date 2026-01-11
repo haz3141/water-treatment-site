@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - TrustBadges section with grayscale certification logos and hover color reveal
 - Badge assets for NSF, BBB, WQA, and HomeAdvisor certifications
+- ServiceGrid section with 3 service cards (Water Softeners, Filtration, Reverse Osmosis)
+- shadcn/ui Card component for consistent card styling
 
 ## [1.1.0] - 2026-01-11
 
