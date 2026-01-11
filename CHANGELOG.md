@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - shadcn/ui Card component for consistent card styling
 - HowItWorks section with 4-step process timeline (Schedule, Test, Install, Enjoy)
 - Testimonials section with customer quotes, 5-star ratings, and avatar initials
+- CtaFooter section with high-contrast CTA block and trust indicators
 
 ## [1.1.0] - 2026-01-11
 

@@ -6,6 +6,7 @@ import { TrustBadges } from "@/components/sections/TrustBadges";
 import { ServiceGrid } from "@/components/sections/ServiceGrid";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { Testimonials } from "@/components/sections/Testimonials";
+import { CtaFooter } from "@/components/sections/CtaFooter";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <ServiceGrid />
       <HowItWorks />
       <Testimonials />
+      <CtaFooter />
     </>
   );
 }
