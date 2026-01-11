@@ -2,6 +2,7 @@
 
 import { HeroSection } from "@/components/sections/HeroSection";
 import { LeadFunnel } from "@/components/sections/LeadFunnel";
+import { TrustBadges } from "@/components/sections/TrustBadges";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
           );
         }}
       />
+      <TrustBadges />
     </>
   );
 }
