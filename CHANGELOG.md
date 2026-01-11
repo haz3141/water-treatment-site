@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - ServiceGrid section with 3 service cards (Water Softeners, Filtration, Reverse Osmosis)
 - shadcn/ui Card component for consistent card styling
 - HowItWorks section with 4-step process timeline (Schedule, Test, Install, Enjoy)
+- Testimonials section with customer quotes, 5-star ratings, and avatar initials
 
 ## [1.1.0] - 2026-01-11
 
