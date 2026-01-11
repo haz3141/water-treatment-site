@@ -1,0 +1,47 @@
+<task>
+  <goal>
+    Design a high-converting hero section for a local water treatment business landing page.
+  </goal>
+
+  <context>
+    <business>
+      Residential water treatment company offering whole-house filters, water softeners, and reverse osmosis systems.
+    </business>
+    <offer>
+      Free in-home water test or quote.
+    </offer>
+    <targetAudience>
+      Homeowners aged 30–65 searching online (Google Ads, SEO) for cleaner or softer water solutions.
+    </targetAudience>
+    <location>
+      Targeting homeowners in [Your City] – adjust copy for local relevance.
+    </location>
+    <style>
+      Clean, modern, health-focused, premium design — no gimmicks or hard sales language.
+    </style>
+  </context>
+
+  <requirements>
+    <layout>
+      - 1-line headline
+      - Short supporting subheading
+      - Primary CTA button (e.g. “Get My Free Water Test”)
+      - Optional image/icon
+      - Light background color or white
+    </layout>
+    <copyTone>
+      Conversational, approachable, trustworthy
+    </copyTone>
+    <constraints>
+      Avoid hard sell tone; emphasize trust, health, and convenience.
+    </constraints>
+  </requirements>
+
+  <outputFormat>
+    Please return:
+    1. Suggested headline and subheading
+    2. Suggested CTA button copy
+    3. Layout sketch in markdown or pseudocode (not actual HTML yet)
+    4. Optional notes on styling or layout hierarchy
+  </outputFormat>
+</task>
