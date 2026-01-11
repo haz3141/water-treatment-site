@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Project rules and workflows for Antigravity agent guidance
+- Git best practices: atomic commits, branching, changelog tracking
+- Clean versioning aligned with completed UI scaffold
 - Integrated layout with all initial UI sections (Header, HeroSection, LeadFunnel, Footer)
 - Functional contact funnel with form validation and CTA flow
 - LayoutShell wrapper component for consistent page structure
