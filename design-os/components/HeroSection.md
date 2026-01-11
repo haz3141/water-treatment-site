@@ -1,3 +1,16 @@
+---
+component: HeroSection
+type: section
+status: implemented
+description: Visually establish brand trust and prompt users to schedule a free water test or request a quote.
+tags:
+  - CTA
+  - lead-generation
+  - responsive
+  - hero
+  - residential
+---
+
 # Component: HeroSection
 
 ## Purpose
