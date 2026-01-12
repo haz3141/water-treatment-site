@@ -48,8 +48,14 @@ build-os/designer-os/assets/
 
 ### File Naming
 
-- `hero-main.jpg` or `hero-main.webp` (primary)
-- `hero-wave.svg` (bottom edge overlay)
+Hero raster assets must follow the **Raster Asset Manifest (v1)** naming:
+
+- `hero-master.jpg` — source image (2400×1500)
+- `hero-desktop.jpg` — desktop crop (1600×1000)
+- `hero-mobile.jpg` — mobile crop (1200×900)
+
+Decorative overlays:
+- `divider-wave.svg` — bottom edge wave divider (SVG)
 
 ---
 
@@ -97,9 +103,11 @@ build-os/designer-os/assets/
 
 ### File Naming
 
-- `testimonial-01.jpg`
-- `testimonial-02.jpg`
-- `testimonial-03.jpg`
+Testimonial raster assets must follow the **Raster Asset Manifest (v1)** naming:
+
+- `testimonial-1.jpg` — 512×512
+- `testimonial-2.jpg` — 512×512
+- `testimonial-3.jpg` — 512×512
 
 ---
 
