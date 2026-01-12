@@ -68,7 +68,7 @@ export function Testimonials({ testimonials = defaultTestimonials, className }: 
                         {testimonials.map((testimonial, index) => (
                             <Card
                                 key={index}
-                                className="relative border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900"
+                                className="hover-lift relative rounded-xl border-zinc-200 bg-card dark:border-zinc-800 dark:bg-zinc-900"
                             >
                                 {/* Decorative quote mark */}
                                 <div

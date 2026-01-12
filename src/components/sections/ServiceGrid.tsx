@@ -59,7 +59,7 @@ export function ServiceGrid({ services = defaultServices, className }: ServiceGr
                         {services.map((service, index) => (
                             <Card
                                 key={index}
-                                className="group border-zinc-200 bg-white transition-all duration-300 hover:border-zinc-300 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-zinc-700"
+                                className="hover-lift group rounded-xl border-zinc-200 bg-card transition-all duration-300 hover:border-zinc-300 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-zinc-700"
                             >
                                 <CardHeader className="pb-4">
                                     <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-zinc-100 transition-colors group-hover:bg-zinc-200 dark:bg-zinc-800 dark:group-hover:bg-zinc-700">
