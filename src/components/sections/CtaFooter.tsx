@@ -15,7 +15,7 @@ export interface CtaFooterProps {
 export function CtaFooter({
     headline = "Ready for Better Water?",
     subheadline = "Schedule your free in-home water test today and discover the difference clean, healthy water can make for your family.",
-    ctaLabel = "Get Your Free Quote",
+    ctaLabel = "Get a Free Water Test",
     onCtaClick,
     className,
 }: CtaFooterProps) {

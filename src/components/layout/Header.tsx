@@ -25,7 +25,7 @@ const defaultLinks: NavLink[] = [
 ];
 
 export function Header({
-    ctaLabel = "Free Water Test",
+    ctaLabel = "Get a Free Water Test",
     onCtaClick,
     links = defaultLinks,
 }: HeaderProps) {
@@ -56,6 +56,7 @@ export function Header({
                 <Button
                     onClick={onCtaClick}
                     asChild={!onCtaClick}
+                    className="rounded-full bg-primary px-6 font-semibold text-primary-foreground shadow-md transition-transform hover:scale-105 hover:bg-primary/90"
                 >
                     {onCtaClick ? (
                         ctaLabel
