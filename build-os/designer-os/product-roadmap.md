@@ -16,10 +16,11 @@
 
 ---
 
-## 🧪 In Progress / Experiment
+## 🧪 In Progress / Next
 
-- [ ] Hero layout variations
-- [ ] Testimonials carousel or cards
+- [ ] **Design Polish Pass**: Apply locked design tokens across all sections
+- [ ] Hero layout refinement (single hero image, gradient overlay)
+- [ ] Testimonials styling (cards with real photos)
 - [ ] Location-aware CTA block (by zip)
 - [ ] Optional Calendly embed
 
@@ -37,6 +38,7 @@
 
 ## 🔗 Dependencies / Integration
 
-- Design system: `design-tokens.md`, `design-section.md`
+- Design system: `design-tokens.md`, `design-section.md`, `design-assets.md`
+- Shell layout: `design-shell.md`
 - Lead system: `LeadForm.tsx`, API or CRM webhook
 - CMS optional (e.g. markdown + Next.js for blog)

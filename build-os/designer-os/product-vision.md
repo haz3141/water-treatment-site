@@ -14,11 +14,13 @@ Free water test or quote for:
 - Concerned about water quality or hard water
 - Searching locally (Google/ads/SEO)
 
-## Success = 
-- Clear call to action
-- Trust built quickly (badges, testimonials)
-- Easy-to-complete lead form
-- Clean mobile experience
+## Success Criteria
+
+- **Dominant CTA**: "Get a Free Water Test" (single, consistent CTA everywhere)
+- **Trust built quickly**: Badges, testimonials, guarantees
+- **Easy-to-complete lead form**: Single-column, clear step labeling
+- **Clean mobile experience**: Mobile-first, token-driven theming
+- **High contrast accessibility**: Conversion-optimized design
 
 ## MVP Scope
 - Homepage
