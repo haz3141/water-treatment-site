@@ -113,6 +113,17 @@ export function HeroSection({
                     </div>
                 </div>
             </Container>
+
+            {/* Wave divider at section bottom */}
+            <div className="absolute bottom-0 left-0 right-0 h-16 overflow-hidden md:h-20">
+                <Image
+                    src="/assets/svg/dividers/divider-wave.svg"
+                    alt=""
+                    fill
+                    className="object-cover object-top text-background"
+                    priority
+                />
+            </div>
         </section>
     );
 }

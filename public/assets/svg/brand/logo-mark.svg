@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- Water droplet outline (primary form) -->
+  <path d="M32 6 C32 6 14 28 14 42 C14 52 22 60 32 60 C42 60 50 52 50 42 C50 28 32 6 32 6 Z" />
+  
+  <!-- Leaf integrated on lower-left edge -->
+  <path d="M18 48 C18 48 22 42 28 42 C22 46 20 52 18 48 Z" />
+  <path d="M18 48 C20 45 24 43 28 42" />
+  
+  <!-- Subtle highlight sparkle stroke (clean signal) -->
+  <path d="M24 26 L26 24" />
+  <path d="M23 30 L25 28" />
+</svg>

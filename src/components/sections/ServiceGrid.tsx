@@ -1,29 +1,33 @@
 "use client";
 
+import Image from "next/image";
 import { Container } from "@/components/ui/container";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Droplets, Filter, Waves } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface Service {
-    icon: React.ReactNode;
+    iconSrc: string;
+    iconAlt: string;
     title: string;
     description: string;
 }
 
 const defaultServices: Service[] = [
     {
-        icon: <Droplets className="h-10 w-10 text-primary" aria-hidden="true" />,
+        iconSrc: "/assets/svg/icons/icon-softener.svg",
+        iconAlt: "Water softener icon",
         title: "Water Softeners",
         description: "Remove hard water minerals for softer skin, cleaner fixtures, and extended appliance life.",
     },
     {
-        icon: <Filter className="h-10 w-10 text-primary" aria-hidden="true" />,
+        iconSrc: "/assets/svg/icons/icon-filtration.svg",
+        iconAlt: "Filtration system icon",
         title: "Filtration Systems",
         description: "Multi-stage filters eliminate contaminants for pure, great-tasting water from every tap.",
     },
     {
-        icon: <Waves className="h-10 w-10 text-primary" aria-hidden="true" />,
+        iconSrc: "/assets/svg/icons/icon-ro.svg",
+        iconAlt: "Reverse osmosis icon",
         title: "Reverse Osmosis",
         description: "Advanced purification technology delivers the cleanest, healthiest water for your family.",
     },
@@ -63,7 +67,13 @@ export function ServiceGrid({ services = defaultServices, className }: ServiceGr
                             >
                                 <CardHeader className="pb-4">
                                     <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-zinc-100 transition-colors group-hover:bg-zinc-200 dark:bg-zinc-800 dark:group-hover:bg-zinc-700">
-                                        {service.icon}
+                                        <Image
+                                            src={service.iconSrc}
+                                            alt={service.iconAlt}
+                                            width={40}
+                                            height={40}
+                                            className="h-10 w-10 text-primary dark:invert"
+                                        />
                                     </div>
                                     <CardTitle className="text-xl text-zinc-900 dark:text-zinc-50">
                                         {service.title}

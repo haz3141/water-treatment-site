@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/container";
 
@@ -35,8 +36,15 @@ export function Footer({ links = defaultLinks }: FooterProps) {
                     <div className="flex flex-col gap-3">
                         <Link
                             href="/"
-                            className="text-base font-semibold text-foreground"
+                            className="flex items-center gap-2 text-base font-semibold text-foreground"
                         >
+                            <Image
+                                src="/assets/svg/brand/logo-mark.svg"
+                                alt="Pure Water Solutions logo"
+                                width={24}
+                                height={24}
+                                className="h-6 w-6 dark:invert"
+                            />
                             Pure Water Solutions
                         </Link>
                         <p className="max-w-xs text-sm text-muted-foreground">

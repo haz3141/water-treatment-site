@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- Four-point sparkle (clean/pure accent) -->
+  <path d="M12 2 L12 6" />
+  <path d="M12 18 L12 22" />
+  <path d="M2 12 L6 12" />
+  <path d="M18 12 L22 12" />
+  
+  <!-- Subtle diagonal accents -->
+  <path d="M5 5 L7 7" />
+  <path d="M17 17 L19 19" />
+  <path d="M17 5 L19 7" />
+  <path d="M5 17 L7 19" />
+</svg>

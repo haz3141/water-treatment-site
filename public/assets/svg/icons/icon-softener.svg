@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- Water droplet -->
+  <path d="M32 8 C32 8 16 26 16 38 C16 47 23 54 32 54 C41 54 48 47 48 38 C48 26 32 8 32 8 Z" />
+  
+  <!-- Shield outline integrated with droplet (scale protection concept) -->
+  <path d="M32 22 L40 28 L40 38 C40 44 36 48 32 50 C28 48 24 44 24 38 L24 28 L32 22 Z" />
+  
+  <!-- Small sparkle dots representing scale removal -->
+  <circle cx="20" cy="30" r="1.5" fill="currentColor" stroke="none" />
+  <circle cx="44" cy="30" r="1.5" fill="currentColor" stroke="none" />
+  <circle cx="18" cy="38" r="1" fill="currentColor" stroke="none" />
+  <circle cx="46" cy="38" r="1" fill="currentColor" stroke="none" />
+</svg>

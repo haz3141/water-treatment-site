@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
@@ -34,6 +35,13 @@ export function Header({
             <Container className="flex h-16 items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2">
+                    <Image
+                        src="/assets/svg/brand/logo-mark.svg"
+                        alt="Pure Water Solutions logo"
+                        width={32}
+                        height={32}
+                        className="h-8 w-8 dark:invert"
+                    />
                     <span className="text-xl font-bold text-foreground">
                         Pure Water Solutions
                     </span>
