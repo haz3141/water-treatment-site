@@ -76,7 +76,8 @@ export function HowItWorks({ steps = defaultSteps, className }: HowItWorksProps)
                                 )}
 
                                 {/* Step number circle */}
-                                <div className="relative z-10 mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-zinc-900 text-white transition-transform group-hover:scale-110 dark:bg-zinc-100 dark:text-zinc-900">
+                                <div className="relative z-10 mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground transition-transform group-hover:scale-110"
+                                >
                                     <span className="sr-only">Step {step.number}</span>
                                     {step.icon}
                                 </div>
