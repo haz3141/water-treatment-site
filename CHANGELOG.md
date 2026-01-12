@@ -5,6 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.0] - 2026-01-12
+
+### Added
+
+- Custom SVG asset set for brand identity and UI visuals
+  - Brand mark (logo-mark.svg): Leaf + droplet motif
+  - Service icons: icon-softener.svg, icon-filtration.svg, icon-ro.svg
+  - Wave divider (divider-wave.svg) for section transitions
+  - Accent elements: accent-sparkle.svg, accent-seal.svg
+- Logo integration in Header and Footer components
+- Wave divider at Hero section bottom edge
+
+### Changed
+
+- ServiceGrid now uses custom SVG icons instead of Lucide icons
+- All SVGs use outline-based design with currentColor for theme compatibility
+
 ## [1.4.0] - 2026-01-12
 
 ### Added
