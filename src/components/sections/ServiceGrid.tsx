@@ -13,17 +13,17 @@ interface Service {
 
 const defaultServices: Service[] = [
     {
-        icon: <Droplets className="h-10 w-10 text-blue-500" aria-hidden="true" />,
+        icon: <Droplets className="h-10 w-10 text-primary" aria-hidden="true" />,
         title: "Water Softeners",
         description: "Remove hard water minerals for softer skin, cleaner fixtures, and extended appliance life.",
     },
     {
-        icon: <Filter className="h-10 w-10 text-emerald-500" aria-hidden="true" />,
+        icon: <Filter className="h-10 w-10 text-primary" aria-hidden="true" />,
         title: "Filtration Systems",
         description: "Multi-stage filters eliminate contaminants for pure, great-tasting water from every tap.",
     },
     {
-        icon: <Waves className="h-10 w-10 text-cyan-500" aria-hidden="true" />,
+        icon: <Waves className="h-10 w-10 text-primary" aria-hidden="true" />,
         title: "Reverse Osmosis",
         description: "Advanced purification technology delivers the cleanest, healthiest water for your family.",
     },
