@@ -104,7 +104,7 @@ export function LeadFunnel({
         return (
             <section
                 className={cn(
-                    "w-full bg-zinc-50 py-16 dark:bg-zinc-950 lg:py-24",
+                    "w-full bg-surface py-12 dark:bg-zinc-950 md:py-16",
                     className
                 )}
             >
@@ -149,7 +149,7 @@ export function LeadFunnel({
     return (
         <section
             className={cn(
-                "w-full bg-zinc-50 py-16 dark:bg-zinc-950 lg:py-24",
+                "w-full bg-surface py-12 dark:bg-zinc-950 md:py-16",
                 className
             )}
         >
