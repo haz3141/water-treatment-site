@@ -19,7 +19,6 @@ export interface HeroSectionProps {
 export function HeroSection({
     ctaLabel = "Get a Free Water Test",
     onCtaClick,
-    backgroundImage,
     brandBadgeUrls,
     className,
 }: HeroSectionProps) {
@@ -31,17 +30,32 @@ export function HeroSection({
             )}
         >
             {/* Optional background image */}
-            {backgroundImage && (
-                <div className="absolute inset-0 z-0">
+            {/* Background images key - Art Direction */}
+            <div className="absolute inset-0 z-0">
+                {/* Mobile Image (default, hidden on lg) */}
+                <div className="block lg:hidden absolute inset-0">
                     <Image
-                        src={backgroundImage}
-                        alt=""
+                        src="/assets/images/hero/hero-mobile.jpg"
+                        alt="Happy family enjoying clean water"
                         fill
                         className="object-cover opacity-10"
                         priority
+                        sizes="100vw"
                     />
                 </div>
-            )}
+
+                {/* Desktop Image (hidden on mobile, block on lg) */}
+                <div className="hidden lg:block absolute inset-0">
+                    <Image
+                        src="/assets/images/hero/hero-desktop.jpg"
+                        alt="Happy family enjoying clean water"
+                        fill
+                        className="object-cover object-top opacity-10"
+                        priority
+                        sizes="100vw"
+                    />
+                </div>
+            </div>
 
             <Container className="relative z-10 flex min-h-[80vh] flex-col items-center justify-center py-16 lg:flex-row lg:items-center lg:justify-between lg:gap-16 lg:py-24">
                 {/* Text content */}

@@ -2,7 +2,7 @@
 
 import { Container } from "@/components/ui/container";
 import { Card, CardContent } from "@/components/ui/card";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Star } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -12,6 +12,7 @@ interface Testimonial {
     quote: string;
     initials: string;
     rating: number;
+    image: string;
 }
 
 const defaultTestimonials: Testimonial[] = [
@@ -21,6 +22,7 @@ const defaultTestimonials: Testimonial[] = [
         quote: "Our water has never tasted better. The installation was quick and professional. We noticed the difference immediately!",
         initials: "SM",
         rating: 5,
+        image: "/assets/images/testimonials/testimonial-1.jpg"
     },
     {
         name: "Mike T.",
@@ -28,6 +30,7 @@ const defaultTestimonials: Testimonial[] = [
         quote: "Best investment we've made for our home. The difference is night and day. Our appliances are already cleaner.",
         initials: "MT",
         rating: 5,
+        image: "/assets/images/testimonials/testimonial-2.jpg"
     },
     {
         name: "Lisa K.",
@@ -35,6 +38,7 @@ const defaultTestimonials: Testimonial[] = [
         quote: "We noticed the improvement immediately. Highly recommend their service! The team was courteous and efficient.",
         initials: "LK",
         rating: 5,
+        image: "/assets/images/testimonials/testimonial-3.jpg"
     },
 ];
 
@@ -99,6 +103,7 @@ export function Testimonials({ testimonials = defaultTestimonials, className }: 
                                     {/* Customer info */}
                                     <div className="flex items-center gap-3">
                                         <Avatar className="h-10 w-10 border-2 border-zinc-200 dark:border-zinc-700">
+                                            <AvatarImage src={testimonial.image} alt={testimonial.name} />
                                             <AvatarFallback className="bg-zinc-100 text-sm font-medium text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300">
                                                 {testimonial.initials}
                                             </AvatarFallback>
