@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- Outer seal ring -->
+  <circle cx="32" cy="32" r="28" />
+  
+  <!-- Inner seal ring (double-line badge frame) -->
+  <circle cx="32" cy="32" r="24" />
+  
+  <!-- Subtle notch accents at cardinal points -->
+  <path d="M32 4 L32 8" />
+  <path d="M32 56 L32 60" />
+  <path d="M4 32 L8 32" />
+  <path d="M56 32 L60 32" />
+</svg>

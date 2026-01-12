@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- Central water droplet (pure water) -->
+  <path d="M32 18 C32 18 22 32 22 40 C22 46 26 52 32 52 C38 52 42 46 42 40 C42 32 32 18 32 18 Z" />
+  
+  <!-- Concentric rings representing multi-stage refinement -->
+  <circle cx="32" cy="36" r="22" />
+  <circle cx="32" cy="36" r="28" opacity="0.6" />
+  
+  <!-- Three-stage checkpoint dots -->
+  <circle cx="32" cy="8" r="2" fill="currentColor" stroke="none" />
+  <circle cx="10" cy="36" r="2" fill="currentColor" stroke="none" />
+  <circle cx="54" cy="36" r="2" fill="currentColor" stroke="none" />
+  
+  <!-- Subtle purity indicator inside droplet -->
+  <path d="M28 36 L30 34" />
+  <path d="M27 40 L29 38" />
+</svg>
