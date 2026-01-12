@@ -99,7 +99,7 @@ Drop-in token set with premium dark navy theming. Final hex values to be defined
 
 ## Spacing
 
-Tailwind scale-based:
+Token-based spacing scale:
 
 | Token | Value |
 |-------|-------|
@@ -110,7 +110,7 @@ Tailwind scale-based:
 | `space-12` | 3rem |
 | `space-16` | 4rem |
 
-Use `py-12` to `py-16` for sections, `gap-6` for blocks/cards.
+Use `space-12` to `space-16` for section padding, `space-6` for card gaps.
 
 ---
 
@@ -128,8 +128,8 @@ Use `py-12` to `py-16` for sections, `gap-6` for blocks/cards.
 
 | Context | Value |
 |---------|-------|
-| Section container | `max-w-7xl` |
-| Inputs/buttons | Responsive full width on mobile |
+| Section container | 80rem (1280px) |
+| Inputs/buttons | Full width on mobile, constrained on desktop |
 
 ---
 

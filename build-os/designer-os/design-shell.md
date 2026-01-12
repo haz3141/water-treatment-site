@@ -24,10 +24,10 @@ All shell elements reinforce the brand metaphor (Leaf + Water Droplet) through:
 
 ### Section Wrapper
 
-- Container: `max-w-7xl mx-auto px-4 md:px-8`
-- Vertical spacing: `py-12` to `py-16`
+- Container: Max width 80rem (1280px), centered with horizontal padding
+- Vertical spacing: `space-12` to `space-16` tokens
 - Background options: `--color-surface`, `--color-card`
-- Stack children: `flex-col gap-6`
+- Stack children vertically with `space-6` gap
 
 ### Footer
 
@@ -63,7 +63,7 @@ All shell elements reinforce the brand metaphor (Leaf + Water Droplet) through:
 ## Responsive Behavior
 
 - All sections mobile-first
-- Grid layout: `grid-cols-1 md:grid-cols-2` where needed
+- Grid layout: Single column on mobile, two columns on desktop where needed
 - Header collapses to hamburger on narrow viewports
 - Inputs/buttons full-width on mobile
 

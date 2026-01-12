@@ -8,8 +8,8 @@
 - [x] Lead funnel wireframe
 - [x] Visual token system
 - [x] Section scaffold in Design OS
-- [ ] Build homepage using sections
-- [ ] Implement lead capture form
+- [x] Build homepage using sections
+- [x] Implement lead capture form
 - [ ] Connect to CRM or webhook
 - [ ] Launch Google LSA-compatible site
 - [ ] Mobile and SEO optimization
