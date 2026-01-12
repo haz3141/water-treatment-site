@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] - 2026-01-12
+
+### Added
+
+- Inter font for body copy (Geist Sans remains for headings) per design-tokens.md
+- Typography role tokens: font-heading (Geist Sans), font-body (Inter)
+- Tier-1 motion utilities: animate-fade-up (hero text), hover-lift (cards)
+- prefers-reduced-motion support for all motion effects
+
+### Changed
+
+- Normalized section padding to py-12 md:py-16 across all homepage sections
+- Unified CTA labels to "Get a Free Water Test" in Header, Hero, and CtaFooter
+- Enhanced Header CTA with rounded-full, shadow-md, hover:scale-105 styling
+- Applied rounded-xl and hover-lift to ServiceGrid and Testimonials cards
+- Preserved brand tokens in dark mode (primary, accent, success)
+- Standardized internal gaps from gap-12 to gap-10 for consistent rhythm
+- Updated section backgrounds to use surface/card tokens consistently
+
 ## [1.3.0] - 2026-01-12
 
 ### Changed
