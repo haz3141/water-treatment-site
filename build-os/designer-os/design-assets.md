@@ -95,6 +95,108 @@ build-os/designer-os/assets/
 
 ---
 
+## SVG Asset Specifications (v1)
+
+### Purpose
+These SVG assets provide scalable, token-compatible brand and UI visuals for v1 polish. All SVGs must be outline-based, consistent in stroke style, and themeable via CSS (no baked colors/gradients).
+
+---
+
+### Global SVG Constraints (Non-Negotiable)
+- **Style:** Outline icons only (no filled glyphs by default).
+- **Stroke:** Consistent stroke width across all icons (2.0–2.25), **rounded caps and joins**.
+- **Color:** Single-color by default using `currentColor` (or CSS variables); **no baked hex colors**.
+- **No gradients:** Do not bake gradients into SVGs.
+- **No text:** Do not embed text in SVG.
+- **Geometry:** Clean, minimal paths; avoid jagged Beziers; keep shapes readable at 24px–32px.
+- **Accessibility:** All inline SVG usage must support `aria-hidden="true"` for decorative icons and accessible labels when meaningful.
+
+---
+
+### Required SVG Deliverables (Inventory)
+
+#### 1) Brand Mark (Logo)
+- **Filename:** `logo-mark.svg`
+- **Concept:** Leaf + water droplet mark representing purity + nature + engineering.
+- **Composition:**
+  - Droplet outline as the primary form.
+  - Leaf integrated either inside the droplet or wrapped to the lower-left edge.
+  - Optional small highlight notch/sparkle stroke for “clean” signal (subtle).
+- **Use:** Header + Footer brand mark (favicon variant later).
+
+#### 2) Service Icons (3)
+All service icons are concept-first (not literal product diagrams).
+- **Common Spec:**
+  - **ViewBox:** `0 0 64 64`
+  - **Output size target:** 24px–32px display, crisp at 16px and 48px.
+
+A) **Water Softener**
+- **Filename:** `icon-softener.svg`
+- **Concept:** scale protection / smoother water
+- **Shapes (allowed):**
+  - Droplet + subtle shield
+  - Droplet with tiny “scale dots” being removed
+  - Droplet above a smooth wave with a small sparkle
+- **Avoid:** tanks/valves/plumbing schematics
+
+B) **Whole-Home Filtration**
+- **Filename:** `icon-filtration.svg`
+- **Concept:** layered filtering / clean flow
+- **Shapes (allowed):**
+  - 3-layer filter stack with flow lines
+  - Droplet passing through layered bands
+  - Simple funnel shape with droplet in → clean droplet out
+- **Avoid:** cartridge brand silhouettes, complex machinery
+
+C) **Reverse Osmosis (RO)**
+- **Filename:** `icon-ro.svg`
+- **Concept:** high purity / multi-stage refinement
+- **Shapes (allowed):**
+  - Droplet with concentric rings
+  - Droplet + three-stage dots/checkpoints
+  - Minimal split “pure vs waste” concept using subtle dashed/solid flow
+- **Avoid:** literal under-sink system diagrams
+
+#### 3) Section Divider
+- **Filename:** `divider-wave.svg`
+- **Concept:** calm water wave divider
+- **Spec:**
+  - Responsive, full-width wave path
+  - Prefer single path (or minimal paths)
+  - Color driven by CSS (`currentColor`/CSS variables)
+- **Use:** Hero bottom edge (primary), optional above final CTA
+
+---
+
+### Optional SVG Deliverables (Recommended Enhancements)
+
+#### 4) Micro Accent: Sparkle
+- **Filename:** `accent-sparkle.svg`
+- **Purpose:** small “clean/pure” accent near trust/guarantee microcopy
+- **Rules:** extremely subtle; use sparingly (max 1–2 placements total)
+
+#### 5) Micro Accent: Seal/Badge Frame
+- **Filename:** `accent-seal.svg`
+- **Purpose:** thin outline seal ring or badge frame used behind trust icons for premium framing
+- **Rules:** keep line-weight consistent with other icons; do not overpower content
+
+---
+
+### File Placement
+Store SVGs in:
+- `public/assets/svg/`
+
+Recommended structure:
+- `public/assets/svg/brand/logo-mark.svg`
+- `public/assets/svg/icons/icon-softener.svg`
+- `public/assets/svg/icons/icon-filtration.svg`
+- `public/assets/svg/icons/icon-ro.svg`
+- `public/assets/svg/dividers/divider-wave.svg`
+- `public/assets/svg/accents/accent-sparkle.svg`
+- `public/assets/svg/accents/accent-seal.svg`
+
+---
+
 ## Icon Assets
 
 ### Sourcing
