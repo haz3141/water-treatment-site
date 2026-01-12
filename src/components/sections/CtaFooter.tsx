@@ -15,7 +15,7 @@ export interface CtaFooterProps {
 export function CtaFooter({
     headline = "Ready for Better Water?",
     subheadline = "Schedule your free in-home water test today and discover the difference clean, healthy water can make for your family.",
-    ctaLabel = "Get Your Free Quote",
+    ctaLabel = "Get a Free Water Test",
     onCtaClick,
     className,
 }: CtaFooterProps) {
@@ -23,7 +23,7 @@ export function CtaFooter({
         <section
             aria-labelledby="cta-footer-heading"
             className={cn(
-                "w-full bg-primary py-16 md:py-24",
+                "w-full bg-primary py-12 md:py-16",
                 className
             )}
         >

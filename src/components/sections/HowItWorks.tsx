@@ -47,12 +47,12 @@ export function HowItWorks({ steps = defaultSteps, className }: HowItWorksProps)
     return (
         <section
             className={cn(
-                "w-full bg-zinc-100 py-16 dark:bg-zinc-900/50 md:py-24",
+                "w-full bg-surface py-12 dark:bg-zinc-900/50 md:py-16",
                 className
             )}
         >
             <Container>
-                <div className="flex flex-col items-center gap-12">
+                <div className="flex flex-col items-center gap-10">
                     {/* Section header */}
                     <div className="text-center">
                         <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-4xl">

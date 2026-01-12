@@ -47,12 +47,12 @@ export function Testimonials({ testimonials = defaultTestimonials, className }: 
     return (
         <section
             className={cn(
-                "w-full bg-zinc-50 py-16 dark:bg-zinc-950 md:py-24",
+                "w-full bg-card py-12 dark:bg-zinc-950 md:py-16",
                 className
             )}
         >
             <Container>
-                <div className="flex flex-col items-center gap-12">
+                <div className="flex flex-col items-center gap-10">
                     {/* Section header */}
                     <div className="text-center">
                         <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-4xl">
@@ -68,7 +68,7 @@ export function Testimonials({ testimonials = defaultTestimonials, className }: 
                         {testimonials.map((testimonial, index) => (
                             <Card
                                 key={index}
-                                className="relative border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900"
+                                className="hover-lift relative rounded-xl border-zinc-200 bg-card dark:border-zinc-800 dark:bg-zinc-900"
                             >
                                 {/* Decorative quote mark */}
                                 <div
