@@ -50,7 +50,7 @@ export function HeroSection({
                         src="/assets/images/hero/hero-desktop.jpg"
                         alt="Happy family enjoying clean water"
                         fill
-                        className="object-cover opacity-10"
+                        className="object-cover object-top opacity-10"
                         priority
                         sizes="100vw"
                     />
