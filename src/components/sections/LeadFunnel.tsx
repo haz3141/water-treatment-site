@@ -104,15 +104,15 @@ export function LeadFunnel({
         return (
             <section
                 className={cn(
-                    "w-full bg-surface py-12 dark:bg-zinc-950 md:py-16",
+                    "w-full bg-surface py-12 dark:bg-background md:py-16",
                     className
                 )}
             >
                 <Container>
                     <div className="mx-auto max-w-2xl text-center">
-                        <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30">
+                        <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-success/10">
                             <svg
-                                className="h-8 w-8 text-green-600 dark:text-green-400"
+                                className="h-8 w-8 text-success"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -125,10 +125,10 @@ export function LeadFunnel({
                                 />
                             </svg>
                         </div>
-                        <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
+                        <h2 className="text-3xl font-bold tracking-tight text-foreground">
                             Thank You!
                         </h2>
-                        <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
+                        <p className="mt-4 text-lg text-muted-foreground">
                             We&apos;ve received your request and will be in
                             touch within 24 hours to schedule your free water
                             test.
@@ -149,7 +149,7 @@ export function LeadFunnel({
     return (
         <section
             className={cn(
-                "w-full bg-surface py-12 dark:bg-zinc-950 md:py-16",
+                "w-full bg-surface py-12 dark:bg-background md:py-16",
                 className
             )}
         >
@@ -157,10 +157,10 @@ export function LeadFunnel({
                 <div className="mx-auto max-w-4xl">
                     {/* Header */}
                     <div className="mb-12 text-center">
-                        <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-4xl">
+                        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
                             Get Your Free Water Test
                         </h2>
-                        <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
+                        <p className="mt-4 text-lg text-muted-foreground">
                             Schedule a complimentary in-home water analysis and
                             receive a custom treatment recommendation.
                         </p>
@@ -169,12 +169,12 @@ export function LeadFunnel({
                     {/* Form */}
                     <form
                         onSubmit={handleSubmit(handleFormSubmit)}
-                        className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-900 sm:p-8 lg:p-10"
+                        className="rounded-2xl border border-border bg-white p-6 shadow-sm dark:bg-secondary sm:p-8 lg:p-10"
                         noValidate
                     >
                         {/* Error banner */}
                         {submitStatus === "error" && errorMessage && (
-                            <div className="mb-6 rounded-lg border border-red-200 bg-red-50 p-4 text-sm text-red-700 dark:border-red-800/50 dark:bg-red-900/20 dark:text-red-400">
+                            <div className="mb-6 rounded-lg border border-destructive/50 bg-destructive/10 p-4 text-sm text-destructive">
                                 <div className="flex items-center gap-2">
                                     <svg
                                         className="h-5 w-5 flex-shrink-0"
@@ -197,7 +197,7 @@ export function LeadFunnel({
                             <div className="space-y-2">
                                 <Label htmlFor="name">
                                     Full Name{" "}
-                                    <span className="text-red-500">*</span>
+                                    <span className="text-destructive">*</span>
                                 </Label>
                                 <Input
                                     id="name"
@@ -211,14 +211,14 @@ export function LeadFunnel({
                                     className={cn(
                                         "h-12",
                                         errors.name &&
-                                        "border-red-500 focus-visible:ring-red-500"
+                                        "border-destructive focus-visible:ring-destructive"
                                     )}
                                     {...register("name")}
                                 />
                                 {errors.name && (
                                     <p
                                         id="name-error"
-                                        className="text-sm text-red-500"
+                                        className="text-sm text-destructive"
                                     >
                                         {errors.name.message}
                                     </p>
@@ -229,7 +229,7 @@ export function LeadFunnel({
                             <div className="space-y-2">
                                 <Label htmlFor="email">
                                     Email Address{" "}
-                                    <span className="text-red-500">*</span>
+                                    <span className="text-destructive">*</span>
                                 </Label>
                                 <Input
                                     id="email"
@@ -243,14 +243,14 @@ export function LeadFunnel({
                                     className={cn(
                                         "h-12",
                                         errors.email &&
-                                        "border-red-500 focus-visible:ring-red-500"
+                                        "border-destructive focus-visible:ring-destructive"
                                     )}
                                     {...register("email")}
                                 />
                                 {errors.email && (
                                     <p
                                         id="email-error"
-                                        className="text-sm text-red-500"
+                                        className="text-sm text-destructive"
                                     >
                                         {errors.email.message}
                                     </p>
@@ -272,14 +272,14 @@ export function LeadFunnel({
                                     className={cn(
                                         "h-12",
                                         errors.phone &&
-                                        "border-red-500 focus-visible:ring-red-500"
+                                        "border-destructive focus-visible:ring-destructive"
                                     )}
                                     {...register("phone")}
                                 />
                                 {errors.phone && (
                                     <p
                                         id="phone-error"
-                                        className="text-sm text-red-500"
+                                        className="text-sm text-destructive"
                                     >
                                         {errors.phone.message}
                                     </p>
@@ -290,7 +290,7 @@ export function LeadFunnel({
                             <div className="space-y-2">
                                 <Label htmlFor="zipCode">
                                     ZIP Code{" "}
-                                    <span className="text-red-500">*</span>
+                                    <span className="text-destructive">*</span>
                                 </Label>
                                 <Input
                                     id="zipCode"
@@ -306,14 +306,14 @@ export function LeadFunnel({
                                     className={cn(
                                         "h-12",
                                         errors.zipCode &&
-                                        "border-red-500 focus-visible:ring-red-500"
+                                        "border-destructive focus-visible:ring-destructive"
                                     )}
                                     {...register("zipCode")}
                                 />
                                 {errors.zipCode && (
                                     <p
                                         id="zipCode-error"
-                                        className="text-sm text-red-500"
+                                        className="text-sm text-destructive"
                                     >
                                         {errors.zipCode.message}
                                     </p>
@@ -324,7 +324,7 @@ export function LeadFunnel({
                             <div className="space-y-2 md:col-span-2">
                                 <Label htmlFor="serviceType">
                                     What are you interested in?{" "}
-                                    <span className="text-red-500">*</span>
+                                    <span className="text-destructive">*</span>
                                 </Label>
                                 <Select
                                     onValueChange={(value) =>
@@ -346,7 +346,7 @@ export function LeadFunnel({
                                         className={cn(
                                             "h-12",
                                             errors.serviceType &&
-                                            "border-red-500 focus-visible:ring-red-500"
+                                            "border-destructive focus-visible:ring-destructive"
                                         )}
                                     >
                                         <SelectValue placeholder="Select a service type" />
@@ -369,7 +369,7 @@ export function LeadFunnel({
                                 {errors.serviceType && (
                                     <p
                                         id="serviceType-error"
-                                        className="text-sm text-red-500"
+                                        className="text-sm text-destructive"
                                     >
                                         {errors.serviceType.message}
                                     </p>
@@ -380,7 +380,7 @@ export function LeadFunnel({
                             <div className="space-y-2 md:col-span-2">
                                 <Label htmlFor="message">
                                     Additional Notes{" "}
-                                    <span className="text-zinc-400">
+                                    <span className="text-muted-foreground">
                                         (optional)
                                     </span>
                                 </Label>
@@ -432,7 +432,7 @@ export function LeadFunnel({
                         </div>
 
                         {/* Trust indicator */}
-                        <p className="mt-6 text-center text-sm text-zinc-500 dark:text-zinc-400">
+                        <p className="mt-6 text-center text-sm text-muted-foreground">
                             🔒 Your information is secure and will never be
                             shared with third parties.
                         </p>
