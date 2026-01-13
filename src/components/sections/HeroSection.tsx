@@ -60,10 +60,10 @@ export function HeroSection({
             <Container className="relative z-10 flex flex-col items-center justify-center lg:flex-row lg:items-center lg:justify-between lg:gap-16">
                 {/* Text content */}
                 <div className="animate-fade-up flex max-w-2xl flex-col items-center text-center lg:items-start lg:text-left">
-                    <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+                    <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
                         Better Water for Every Home
                     </h1>
-                    <p className="mt-6 text-lg leading-8 text-muted-foreground sm:text-xl">
+                    <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
                         Schedule your free in-home water test and discover how clean,
                         healthy water can transform your family&apos;s daily life.
                     </p>
