@@ -46,8 +46,9 @@ export interface HowItWorksProps {
 export function HowItWorks({ steps = defaultSteps, className }: HowItWorksProps) {
     return (
         <section
+            id="how-it-works"
             className={cn(
-                "w-full bg-surface py-12 dark:bg-zinc-900/50 md:py-16",
+                "w-full bg-card py-24 dark:bg-zinc-900/50 md:py-32",
                 className
             )}
         >

@@ -25,7 +25,7 @@ export function TrustBadges({ badges = defaultBadges, className }: TrustBadgesPr
     return (
         <section
             className={cn(
-                "w-full bg-surface py-12 dark:bg-zinc-900/50",
+                "w-full bg-surface py-16 dark:bg-zinc-900/50 md:py-20",
                 className
             )}
         >

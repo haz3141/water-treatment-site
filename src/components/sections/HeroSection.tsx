@@ -25,7 +25,7 @@ export function HeroSection({
     return (
         <section
             className={cn(
-                "relative min-h-[80vh] w-full bg-primary-soft dark:bg-zinc-950",
+                "relative w-full bg-primary-soft py-24 dark:bg-zinc-950 md:py-32",
                 className
             )}
         >
@@ -57,7 +57,7 @@ export function HeroSection({
                 </div>
             </div>
 
-            <Container className="relative z-10 flex min-h-[80vh] flex-col items-center justify-center py-16 lg:flex-row lg:items-center lg:justify-between lg:gap-16 lg:py-24">
+            <Container className="relative z-10 flex flex-col items-center justify-center lg:flex-row lg:items-center lg:justify-between lg:gap-16">
                 {/* Text content */}
                 <div className="animate-fade-up flex max-w-2xl flex-col items-center text-center lg:items-start lg:text-left">
                     <h1 className="text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-5xl lg:text-6xl">

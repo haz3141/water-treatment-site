@@ -50,8 +50,9 @@ export interface TestimonialsProps {
 export function Testimonials({ testimonials = defaultTestimonials, className }: TestimonialsProps) {
     return (
         <section
+            id="testimonials"
             className={cn(
-                "w-full bg-card py-12 dark:bg-zinc-950 md:py-16",
+                "w-full bg-primary-soft py-24 dark:bg-zinc-950 md:py-32",
                 className
             )}
         >
