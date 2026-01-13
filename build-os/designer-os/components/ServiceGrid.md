@@ -1,7 +1,9 @@
 # ServiceGrid
 
+> **V2 Alignment Note**: Well Water Treatment is a required service (4 cards total).
+
 ## Purpose
-Introduce and explain the core water treatment services offered: Water Softeners, Filtration Systems, and Reverse Osmosis.
+Introduce and explain the core water treatment services offered: Water Softeners, Filtration Systems, Reverse Osmosis, and Well Water Treatment.
 
 ## Content Zones
 - ServiceCard × 3, each containing:
@@ -26,12 +28,13 @@ Introduce and explain the core water treatment services offered: Water Softeners
 <ServiceGrid />
 ```
 
-## Service Data
+## Service Data (V2)
 | Icon | Title | Description |
 |------|-------|-------------|
 | Droplets | Water Softeners | Remove hard water minerals for softer skin and cleaner fixtures |
 | Filter | Filtration Systems | Multi-stage filters for pure, great-tasting water |
 | Waves | Reverse Osmosis | Advanced purification for the cleanest water possible |
+| Home | Well Water Treatment | Complete solutions for private well water systems (V2 required) |
 
 ## Accessibility
 - Semantic heading levels (h2 for section, h3 for cards)

@@ -1,6 +1,11 @@
 # Design Assets
 
-Asset sourcing and placement specifications for imagery, icons, and visual elements.
+> **V2 LOCK**
+> - Status: Locked
+> - Date: 2026-01-13
+> - Source: Designer-OS V2 Lock (docs/designer-os-v2-lock)
+
+Asset sourcing and placement specifications for imagery, icons, and visual elements. All assets support the **Eco One Water** brand.
 
 ---
 
@@ -33,10 +38,19 @@ build-os/designer-os/assets/
 - **Background**: White or light, uncluttered
 - **Mood**: Clean, calm, trustworthy, premium residential
 
-### Overlays
+### Overlays (Token-Driven)
 
-- Soft blue gradient (top → bottom) using `--color-primary-soft`
-- Water ripple or wave SVG at bottom edge (optional decorative element)
+- Soft gradient (top → bottom) using `--color-primary-soft` (not hardcoded hex)
+- Water ripple or wave SVG at bottom edge (optional decorative element, uses palette tokens)
+
+### Droplet Overlay
+
+- **Not used in hero** — droplet mark is retained as a brand asset for other uses (e.g., icons, badges)
+
+### Required Style
+
+- **Lifestyle imagery default** — families, homeowners, clean residential settings
+- No abstract tech graphics or corporate vibe
 
 ### Disallowed
 
