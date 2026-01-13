@@ -23,7 +23,7 @@ export function CtaFooter({
         <section
             aria-labelledby="cta-footer-heading"
             className={cn(
-                "w-full bg-primary py-12 md:py-16",
+                "w-full bg-primary py-24 md:py-32",
                 className
             )}
         >

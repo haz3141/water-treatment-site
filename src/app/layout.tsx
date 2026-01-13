@@ -19,9 +19,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Pure Water Solutions | Free Water Testing & Treatment",
+  title: "Eco One Water | Free Water Testing & Treatment",
   description:
-    "Schedule your free in-home water test and discover clean, healthy water for your family. Local, trusted water treatment experts serving residential homeowners.",
+    "Schedule your free in-home water test and discover clean, healthy water for your family. Eco One Water — local, trusted water treatment experts serving residential homeowners in Central Florida.",
 };
 
 export default function RootLayout({

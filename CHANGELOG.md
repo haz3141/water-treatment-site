@@ -5,6 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.7.0] - 2026-01-13
+
+### Changed
+
+- **Brand**: Renamed from "Pure Water Solutions" to "Eco One Water" across UI and metadata
+- **Theme**: Applied V2 Palette A tokens (Coastal Teal #12A594 primary, #0091FF accent)
+- **Typography**: Enforced V2 type scale and spacing rhythm (py-24/py-32 sections)
+- **Hero**: Implemented Z-pattern layout, removed droplet overlay
+- **Wave Divider**: Fixed to use inline SVG with token-driven color (no longer black)
+- **Testimonials**: Localized to Florida cities (Sanford, Lake Mary, Deltona)
+- **Section Backgrounds**: Applied section rhythm with surface/card/primary-soft alternation
+
+### Added
+
+- "Well Water Treatment" as 4th service card per V2 content contract
+- icon-well.svg matching existing icon style
+- Section anchors (#services, #how-it-works, #testimonials)
+- primary-hover (#0E9888) and primary-active (#067A6F) color tokens
+
+### Fixed
+
+- Navigation links now wire to real section anchors instead of dead links
+
 ## [1.6.0] - 2026-01-12
 
 ### Added

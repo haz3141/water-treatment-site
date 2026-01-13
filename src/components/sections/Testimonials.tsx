@@ -18,7 +18,7 @@ interface Testimonial {
 const defaultTestimonials: Testimonial[] = [
     {
         name: "Sarah M.",
-        location: "Austin, TX",
+        location: "Sanford, FL",
         quote: "Our water has never tasted better. The installation was quick and professional. We noticed the difference immediately!",
         initials: "SM",
         rating: 5,
@@ -26,7 +26,7 @@ const defaultTestimonials: Testimonial[] = [
     },
     {
         name: "Mike T.",
-        location: "Denver, CO",
+        location: "Lake Mary, FL",
         quote: "Best investment we've made for our home. The difference is night and day. Our appliances are already cleaner.",
         initials: "MT",
         rating: 5,
@@ -34,7 +34,7 @@ const defaultTestimonials: Testimonial[] = [
     },
     {
         name: "Lisa K.",
-        location: "Portland, OR",
+        location: "Deltona, FL",
         quote: "We noticed the improvement immediately. Highly recommend their service! The team was courteous and efficient.",
         initials: "LK",
         rating: 5,
@@ -50,8 +50,9 @@ export interface TestimonialsProps {
 export function Testimonials({ testimonials = defaultTestimonials, className }: TestimonialsProps) {
     return (
         <section
+            id="testimonials"
             className={cn(
-                "w-full bg-card py-12 dark:bg-zinc-950 md:py-16",
+                "w-full bg-primary-soft py-24 dark:bg-zinc-950 md:py-32",
                 className
             )}
         >

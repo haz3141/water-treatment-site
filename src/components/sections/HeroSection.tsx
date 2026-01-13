@@ -25,7 +25,7 @@ export function HeroSection({
     return (
         <section
             className={cn(
-                "relative min-h-[80vh] w-full bg-primary-soft dark:bg-zinc-950",
+                "relative w-full bg-primary-soft py-24 dark:bg-zinc-950 md:py-32",
                 className
             )}
         >
@@ -57,7 +57,7 @@ export function HeroSection({
                 </div>
             </div>
 
-            <Container className="relative z-10 flex min-h-[80vh] flex-col items-center justify-center py-16 lg:flex-row lg:items-center lg:justify-between lg:gap-16 lg:py-24">
+            <Container className="relative z-10 flex flex-col items-center justify-center lg:flex-row lg:items-center lg:justify-between lg:gap-16">
                 {/* Text content */}
                 <div className="animate-fade-up flex max-w-2xl flex-col items-center text-center lg:items-start lg:text-left">
                     <h1 className="text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-5xl lg:text-6xl">
@@ -98,45 +98,20 @@ export function HeroSection({
                         </div>
                     )}
                 </div>
-
-                {/* Visual element - water droplet illustration */}
-                <div className="mt-12 flex items-center justify-center lg:mt-0">
-                    <div className="relative flex h-64 w-64 items-center justify-center sm:h-80 sm:w-80 lg:h-96 lg:w-96">
-                        {/* Decorative background circle */}
-                        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/10 to-accent/10 dark:from-primary/20 dark:to-accent/20" />
-
-                        {/* Water droplet SVG */}
-                        <svg
-                            viewBox="0 0 100 100"
-                            className="relative h-40 w-40 text-primary/60 dark:text-primary/40 sm:h-48 sm:w-48"
-                            fill="currentColor"
-                        >
-                            <path d="M50 5 C50 5 20 45 20 65 C20 82 33 95 50 95 C67 95 80 82 80 65 C80 45 50 5 50 5 Z" />
-                            <ellipse
-                                cx="40"
-                                cy="55"
-                                rx="8"
-                                ry="12"
-                                fill="currentColor"
-                                className="opacity-30"
-                            />
-                        </svg>
-
-                        {/* Subtle animated ring */}
-                        <div className="absolute inset-4 animate-pulse rounded-full border-2 border-accent/30 dark:border-accent/20" />
-                    </div>
-                </div>
             </Container>
 
-            {/* Wave divider at section bottom */}
-            <div className="absolute bottom-0 left-0 right-0 h-16 overflow-hidden md:h-20">
-                <Image
-                    src="/assets/svg/dividers/divider-wave.svg"
-                    alt=""
-                    fill
-                    className="object-cover object-top text-background"
-                    priority
-                />
+            {/* Wave divider at section bottom - uses inline SVG for CSS color inheritance */}
+            <div className="absolute bottom-0 left-0 right-0 h-16 overflow-hidden text-surface md:h-20">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1440 80"
+                    preserveAspectRatio="none"
+                    fill="currentColor"
+                    aria-hidden="true"
+                    className="absolute inset-0 h-full w-full"
+                >
+                    <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" />
+                </svg>
             </div>
         </section>
     );

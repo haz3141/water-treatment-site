@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- Well structure -->
+  <path d="M20 48 L20 28 L18 26 L18 18 L22 18 L22 26 L20 28" />
+  <path d="M44 48 L44 28 L46 26 L46 18 L42 18 L42 26 L44 28" />
+  
+  <!-- Roof -->
+  <path d="M16 18 L32 8 L48 18" />
+  
+  <!-- Bucket/pulley -->
+  <circle cx="32" cy="14" r="2" />
+  <line x1="32" y1="16" x2="32" y2="32" />
+  
+  <!-- Water bucket -->
+  <path d="M26 32 L26 40 L38 40 L38 32 L26 32" />
+  
+  <!-- Well base -->
+  <rect x="16" y="48" width="32" height="4" rx="1" />
+  
+  <!-- Water drops -->
+  <path d="M32 44 C32 44 30 47 30 49 C30 50.5 31 51 32 51 C33 51 34 50.5 34 49 C34 47 32 44 32 44" />
+</svg>

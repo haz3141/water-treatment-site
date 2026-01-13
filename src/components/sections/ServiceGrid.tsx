@@ -31,6 +31,12 @@ const defaultServices: Service[] = [
         title: "Reverse Osmosis",
         description: "Advanced purification technology delivers the cleanest, healthiest water for your family.",
     },
+    {
+        iconSrc: "/assets/svg/icons/icon-well.svg",
+        iconAlt: "Well water icon",
+        title: "Well Water Treatment",
+        description: "Specialized solutions for private well systems to ensure safe, clean water for rural homes.",
+    },
 ];
 
 export interface ServiceGridProps {
@@ -41,8 +47,9 @@ export interface ServiceGridProps {
 export function ServiceGrid({ services = defaultServices, className }: ServiceGridProps) {
     return (
         <section
+            id="services"
             className={cn(
-                "w-full bg-surface py-12 dark:bg-zinc-950 md:py-16",
+                "w-full bg-surface py-24 dark:bg-zinc-950 md:py-32",
                 className
             )}
         >
@@ -59,7 +66,7 @@ export function ServiceGrid({ services = defaultServices, className }: ServiceGr
                     </div>
 
                     {/* Service cards grid */}
-                    <div className="grid w-full gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    <div className="grid w-full gap-6 md:grid-cols-2 lg:grid-cols-4">
                         {services.map((service, index) => (
                             <Card
                                 key={index}
