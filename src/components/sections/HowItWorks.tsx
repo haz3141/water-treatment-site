@@ -48,7 +48,7 @@ export function HowItWorks({ steps = defaultSteps, className }: HowItWorksProps)
         <section
             id="how-it-works"
             className={cn(
-                "w-full bg-card py-24 dark:bg-zinc-900/50 md:py-32",
+                "w-full bg-card py-24 dark:bg-secondary md:py-32",
                 className
             )}
         >
@@ -56,10 +56,10 @@ export function HowItWorks({ steps = defaultSteps, className }: HowItWorksProps)
                 <div className="flex flex-col items-center gap-10">
                     {/* Section header */}
                     <div className="text-center">
-                        <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-4xl">
+                        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
                             How It Works
                         </h2>
-                        <p className="mt-4 max-w-2xl text-lg text-zinc-600 dark:text-zinc-400">
+                        <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
                             Getting clean water in your home is simple with our proven process.
                         </p>
                     </div>
@@ -73,7 +73,7 @@ export function HowItWorks({ steps = defaultSteps, className }: HowItWorksProps)
                             >
                                 {/* Connector line (hidden on first item and mobile) */}
                                 {index > 0 && (
-                                    <div className="absolute right-1/2 top-8 hidden h-0.5 w-full -translate-y-1/2 bg-zinc-300 dark:bg-zinc-700 lg:block" />
+                                    <div className="absolute right-1/2 top-8 hidden h-0.5 w-full -translate-y-1/2 bg-border lg:block" />
                                 )}
 
                                 {/* Step number circle */}
@@ -84,10 +84,10 @@ export function HowItWorks({ steps = defaultSteps, className }: HowItWorksProps)
                                 </div>
 
                                 {/* Step content */}
-                                <h3 className="mb-2 text-lg font-semibold text-zinc-900 dark:text-zinc-50">
+                                <h3 className="mb-2 text-lg font-semibold text-foreground">
                                     {step.title}
                                 </h3>
-                                <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                                <p className="text-sm text-muted-foreground">
                                     {step.description}
                                 </p>
                             </div>

@@ -49,7 +49,7 @@ export function ServiceGrid({ services = defaultServices, className }: ServiceGr
         <section
             id="services"
             className={cn(
-                "w-full bg-surface py-24 dark:bg-zinc-950 md:py-32",
+                "w-full bg-surface py-24 dark:bg-background md:py-32",
                 className
             )}
         >
@@ -57,10 +57,10 @@ export function ServiceGrid({ services = defaultServices, className }: ServiceGr
                 <div className="flex flex-col items-center gap-10">
                     {/* Section header */}
                     <div className="text-center">
-                        <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-4xl">
+                        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
                             Our Water Treatment Services
                         </h2>
-                        <p className="mt-4 max-w-2xl text-lg text-zinc-600 dark:text-zinc-400">
+                        <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
                             Professional solutions tailored to your home&apos;s unique water quality needs.
                         </p>
                     </div>
@@ -70,10 +70,10 @@ export function ServiceGrid({ services = defaultServices, className }: ServiceGr
                         {services.map((service, index) => (
                             <Card
                                 key={index}
-                                className="hover-lift group rounded-xl border-zinc-200 bg-card transition-all duration-300 hover:border-zinc-300 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-zinc-700"
+                                className="hover-lift group rounded-xl border-border bg-card transition-all duration-300 hover:shadow-lg dark:bg-secondary"
                             >
                                 <CardHeader className="pb-4">
-                                    <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-zinc-100 transition-colors group-hover:bg-zinc-200 dark:bg-zinc-800 dark:group-hover:bg-zinc-700">
+                                    <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-muted transition-colors group-hover:bg-muted/80">
                                         <Image
                                             src={service.iconSrc}
                                             alt={service.iconAlt}
@@ -82,12 +82,12 @@ export function ServiceGrid({ services = defaultServices, className }: ServiceGr
                                             className="h-10 w-10 text-primary dark:invert"
                                         />
                                     </div>
-                                    <CardTitle className="text-xl text-zinc-900 dark:text-zinc-50">
+                                    <CardTitle className="text-xl text-foreground">
                                         {service.title}
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent>
-                                    <CardDescription className="text-base text-zinc-600 dark:text-zinc-400">
+                                    <CardDescription className="text-base text-muted-foreground">
                                         {service.description}
                                     </CardDescription>
                                 </CardContent>

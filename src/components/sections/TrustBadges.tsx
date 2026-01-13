@@ -25,13 +25,13 @@ export function TrustBadges({ badges = defaultBadges, className }: TrustBadgesPr
     return (
         <section
             className={cn(
-                "w-full bg-surface py-16 dark:bg-zinc-900/50 md:py-20",
+                "w-full bg-surface py-16 dark:bg-secondary md:py-20",
                 className
             )}
         >
             <Container>
                 <div className="flex flex-col items-center gap-6">
-                    <p className="text-sm font-medium uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
+                    <p className="text-sm font-medium uppercase tracking-wider text-muted-foreground">
                         Trusted by 10,000+ Homeowners
                     </p>
                     <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">

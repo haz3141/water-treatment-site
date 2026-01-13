@@ -52,7 +52,7 @@ export function Testimonials({ testimonials = defaultTestimonials, className }: 
         <section
             id="testimonials"
             className={cn(
-                "w-full bg-primary-soft py-24 dark:bg-zinc-950 md:py-32",
+                "w-full bg-primary-soft py-24 dark:bg-background md:py-32",
                 className
             )}
         >
@@ -60,10 +60,10 @@ export function Testimonials({ testimonials = defaultTestimonials, className }: 
                 <div className="flex flex-col items-center gap-10">
                     {/* Section header */}
                     <div className="text-center">
-                        <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-4xl">
+                        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
                             What Our Customers Say
                         </h2>
-                        <p className="mt-4 max-w-2xl text-lg text-zinc-600 dark:text-zinc-400">
+                        <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
                             Hear from homeowners who transformed their water quality.
                         </p>
                     </div>
@@ -73,11 +73,11 @@ export function Testimonials({ testimonials = defaultTestimonials, className }: 
                         {testimonials.map((testimonial, index) => (
                             <Card
                                 key={index}
-                                className="hover-lift relative rounded-xl border-zinc-200 bg-card dark:border-zinc-800 dark:bg-zinc-900"
+                                className="hover-lift relative rounded-xl border-border bg-card dark:bg-secondary"
                             >
                                 {/* Decorative quote mark */}
                                 <div
-                                    className="absolute -top-2 left-6 text-5xl font-serif text-zinc-200 dark:text-zinc-800"
+                                    className="absolute -top-2 left-6 text-5xl font-serif text-muted-foreground/30"
                                     aria-hidden="true"
                                 >
                                     &ldquo;
@@ -89,7 +89,7 @@ export function Testimonials({ testimonials = defaultTestimonials, className }: 
                                         {Array.from({ length: testimonial.rating }).map((_, i) => (
                                             <Star
                                                 key={i}
-                                                className="h-4 w-4 fill-amber-400 text-amber-400"
+                                                className="h-4 w-4 fill-accent text-accent"
                                                 aria-hidden="true"
                                             />
                                         ))}
@@ -97,23 +97,23 @@ export function Testimonials({ testimonials = defaultTestimonials, className }: 
                                     </div>
 
                                     {/* Quote */}
-                                    <blockquote className="mb-6 text-zinc-700 dark:text-zinc-300">
+                                    <blockquote className="mb-6 text-foreground">
                                         {testimonial.quote}
                                     </blockquote>
 
                                     {/* Customer info */}
                                     <div className="flex items-center gap-3">
-                                        <Avatar className="h-10 w-10 border-2 border-zinc-200 dark:border-zinc-700">
+                                        <Avatar className="h-10 w-10 border-2 border-border">
                                             <AvatarImage src={testimonial.image} alt={testimonial.name} />
-                                            <AvatarFallback className="bg-zinc-100 text-sm font-medium text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300">
+                                            <AvatarFallback className="bg-muted text-sm font-medium text-muted-foreground">
                                                 {testimonial.initials}
                                             </AvatarFallback>
                                         </Avatar>
                                         <div>
-                                            <div className="font-medium text-zinc-900 dark:text-zinc-50">
+                                            <div className="font-medium text-foreground">
                                                 {testimonial.name}
                                             </div>
-                                            <div className="text-sm text-zinc-500 dark:text-zinc-400">
+                                            <div className="text-sm text-muted-foreground">
                                                 {testimonial.location}
                                             </div>
                                         </div>

@@ -25,7 +25,7 @@ export function HeroSection({
     return (
         <section
             className={cn(
-                "relative w-full bg-primary-soft py-24 dark:bg-zinc-950 md:py-32",
+                "relative w-full bg-primary-soft py-24 dark:bg-background md:py-32",
                 className
             )}
         >
@@ -60,10 +60,10 @@ export function HeroSection({
             <Container className="relative z-10 flex flex-col items-center justify-center lg:flex-row lg:items-center lg:justify-between lg:gap-16">
                 {/* Text content */}
                 <div className="animate-fade-up flex max-w-2xl flex-col items-center text-center lg:items-start lg:text-left">
-                    <h1 className="text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-5xl lg:text-6xl">
+                    <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
                         Better Water for Every Home
                     </h1>
-                    <p className="mt-6 text-lg leading-8 text-zinc-600 dark:text-zinc-400 sm:text-xl">
+                    <p className="mt-6 text-lg leading-8 text-muted-foreground sm:text-xl">
                         Schedule your free in-home water test and discover how clean,
                         healthy water can transform your family&apos;s daily life.
                     </p>
@@ -82,7 +82,7 @@ export function HeroSection({
                     {/* Trust badges */}
                     {brandBadgeUrls && brandBadgeUrls.length > 0 && (
                         <div className="mt-12 flex flex-wrap items-center justify-center gap-6 lg:justify-start">
-                            <span className="text-sm font-medium text-zinc-500 dark:text-zinc-400">
+                            <span className="text-sm font-medium text-muted-foreground">
                                 Trusted by:
                             </span>
                             {brandBadgeUrls.map((url, index) => (
