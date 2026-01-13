@@ -20,9 +20,9 @@ interface HeaderProps {
 }
 
 const defaultLinks: NavLink[] = [
-    { label: "About", href: "#about" },
     { label: "Services", href: "#services" },
-    { label: "Contact", href: "#contact" },
+    { label: "How It Works", href: "#how-it-works" },
+    { label: "Testimonials", href: "#testimonials" },
 ];
 
 export function Header({
@@ -37,13 +37,13 @@ export function Header({
                 <Link href="/" className="flex items-center gap-2">
                     <Image
                         src="/assets/svg/brand/logo-mark.svg"
-                        alt="Pure Water Solutions logo"
+                        alt="Eco One Water logo"
                         width={32}
                         height={32}
                         className="h-8 w-8 dark:invert"
                     />
                     <span className="text-xl font-bold text-foreground">
-                        Pure Water Solutions
+                        Eco One Water
                     </span>
                 </Link>
 

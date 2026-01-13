@@ -15,9 +15,9 @@ interface FooterProps {
 }
 
 const defaultLinks: FooterLink[] = [
-    { label: "About", href: "#about" },
     { label: "Services", href: "#services" },
-    { label: "Contact", href: "#contact" },
+    { label: "How It Works", href: "#how-it-works" },
+    { label: "Testimonials", href: "#testimonials" },
 ];
 
 const legalLinks: FooterLink[] = [
@@ -40,12 +40,12 @@ export function Footer({ links = defaultLinks }: FooterProps) {
                         >
                             <Image
                                 src="/assets/svg/brand/logo-mark.svg"
-                                alt="Pure Water Solutions logo"
+                                alt="Eco One Water logo"
                                 width={24}
                                 height={24}
                                 className="h-6 w-6 dark:invert"
                             />
-                            Pure Water Solutions
+                            Eco One Water
                         </Link>
                         <p className="max-w-xs text-sm text-muted-foreground">
                             Clean water for healthier homes. Professional water
@@ -95,8 +95,7 @@ export function Footer({ links = defaultLinks }: FooterProps) {
                 {/* Bottom Bar: Copyright + Legal Links */}
                 <div className="mt-8 flex flex-col gap-4 border-t border-border pt-6 md:flex-row md:items-center md:justify-between">
                     <p className="text-xs text-muted-foreground">
-                        © {currentYear} Pure Water Solutions. All rights
-                        reserved.
+                        © {currentYear} Eco One Water. All rights reserved.
                     </p>
                     <nav aria-label="Legal links">
                         <ul className="flex items-center gap-4">
