@@ -1,7 +1,5 @@
-"use client";
-
 import { HeroSection } from "@/components/sections/HeroSection";
-import { LeadFunnel } from "@/components/sections/LeadFunnel";
+import { LeadFunnelWrapper } from "@/components/sections/LeadFunnelWrapper";
 import { TrustBadges } from "@/components/sections/TrustBadges";
 import { ServiceGrid } from "@/components/sections/ServiceGrid";
 import { HowItWorks } from "@/components/sections/HowItWorks";
@@ -12,15 +10,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <LeadFunnel
-        onSubmit={(data) => {
-          // Mock handler - log data for demo purposes
-          console.log("Form submitted:", data);
-          return new Promise((resolve) =>
-            setTimeout(resolve, 1500)
-          );
-        }}
-      />
+      <LeadFunnelWrapper />
       <TrustBadges />
       <ServiceGrid />
       <HowItWorks />
