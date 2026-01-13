@@ -18,7 +18,7 @@ interface Testimonial {
 const defaultTestimonials: Testimonial[] = [
     {
         name: "Sarah M.",
-        location: "Austin, TX",
+        location: "Sanford, FL",
         quote: "Our water has never tasted better. The installation was quick and professional. We noticed the difference immediately!",
         initials: "SM",
         rating: 5,
@@ -26,7 +26,7 @@ const defaultTestimonials: Testimonial[] = [
     },
     {
         name: "Mike T.",
-        location: "Denver, CO",
+        location: "Lake Mary, FL",
         quote: "Best investment we've made for our home. The difference is night and day. Our appliances are already cleaner.",
         initials: "MT",
         rating: 5,
@@ -34,7 +34,7 @@ const defaultTestimonials: Testimonial[] = [
     },
     {
         name: "Lisa K.",
-        location: "Portland, OR",
+        location: "Deltona, FL",
         quote: "We noticed the improvement immediately. Highly recommend their service! The team was courteous and efficient.",
         initials: "LK",
         rating: 5,

@@ -31,6 +31,12 @@ const defaultServices: Service[] = [
         title: "Reverse Osmosis",
         description: "Advanced purification technology delivers the cleanest, healthiest water for your family.",
     },
+    {
+        iconSrc: "/assets/svg/icons/icon-well.svg",
+        iconAlt: "Well water icon",
+        title: "Well Water Treatment",
+        description: "Specialized solutions for private well systems to ensure safe, clean water for rural homes.",
+    },
 ];
 
 export interface ServiceGridProps {

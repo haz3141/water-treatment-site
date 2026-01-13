@@ -100,15 +100,18 @@ export function HeroSection({
                 </div>
             </Container>
 
-            {/* Wave divider at section bottom */}
-            <div className="absolute bottom-0 left-0 right-0 h-16 overflow-hidden md:h-20">
-                <Image
-                    src="/assets/svg/dividers/divider-wave.svg"
-                    alt=""
-                    fill
-                    className="object-cover object-top text-background"
-                    priority
-                />
+            {/* Wave divider at section bottom - uses inline SVG for CSS color inheritance */}
+            <div className="absolute bottom-0 left-0 right-0 h-16 overflow-hidden text-surface md:h-20">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1440 80"
+                    preserveAspectRatio="none"
+                    fill="currentColor"
+                    aria-hidden="true"
+                    className="absolute inset-0 h-full w-full"
+                >
+                    <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" />
+                </svg>
             </div>
         </section>
     );
