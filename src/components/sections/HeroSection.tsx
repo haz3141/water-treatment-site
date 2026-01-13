@@ -98,34 +98,6 @@ export function HeroSection({
                         </div>
                     )}
                 </div>
-
-                {/* Visual element - water droplet illustration */}
-                <div className="mt-12 flex items-center justify-center lg:mt-0">
-                    <div className="relative flex h-64 w-64 items-center justify-center sm:h-80 sm:w-80 lg:h-96 lg:w-96">
-                        {/* Decorative background circle */}
-                        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/10 to-accent/10 dark:from-primary/20 dark:to-accent/20" />
-
-                        {/* Water droplet SVG */}
-                        <svg
-                            viewBox="0 0 100 100"
-                            className="relative h-40 w-40 text-primary/60 dark:text-primary/40 sm:h-48 sm:w-48"
-                            fill="currentColor"
-                        >
-                            <path d="M50 5 C50 5 20 45 20 65 C20 82 33 95 50 95 C67 95 80 82 80 65 C80 45 50 5 50 5 Z" />
-                            <ellipse
-                                cx="40"
-                                cy="55"
-                                rx="8"
-                                ry="12"
-                                fill="currentColor"
-                                className="opacity-30"
-                            />
-                        </svg>
-
-                        {/* Subtle animated ring */}
-                        <div className="absolute inset-4 animate-pulse rounded-full border-2 border-accent/30 dark:border-accent/20" />
-                    </div>
-                </div>
             </Container>
 
             {/* Wave divider at section bottom */}
