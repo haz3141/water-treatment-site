@@ -1,6 +1,11 @@
 # Raster Prompts (v1)
 
-This file is a prompt vault for raster asset generation/editing. It ensures repeatability across iterations.
+> **V2 LOCK**
+> - Status: Locked
+> - Date: 2026-01-13
+> - Source: Designer-OS V2 Lock (docs/designer-os-v2-lock)
+
+Prompt vault for **Eco One Water** raster asset generation/editing. Ensures repeatability across iterations.
 All outputs must comply with `design-assets.md` raster specs.
 
 ---
@@ -46,6 +51,9 @@ All outputs must comply with `design-assets.md` raster specs.
 ---
 
 ## Notes for Generation Workflow
-- Generate at master resolution first (hero-master).
-- Derive hero-desktop and hero-mobile crops after selecting the best master.
-- Validate outputs at 100% zoom for artifacts (eyes/teeth/hands/background distortions).
+
+- Generate at master resolution first (hero-master)
+- Derive hero-desktop and hero-mobile crops after selecting the best master
+- Validate outputs at 100% zoom for artifacts (eyes/teeth/hands/background distortions)
+- **Composition**: Maintain negative space for headline + CTA overlay
+- **Style**: Lifestyle imagery default — no abstract tech graphics

@@ -1,5 +1,7 @@
 # Testimonials
 
+> **V2 Alignment Note**: Testimonials must use Seminole & Volusia FL cities only.
+
 ## Purpose
 Build trust with 1-3 customer quotes and faces to demonstrate real customer satisfaction.
 
@@ -28,12 +30,12 @@ Build trust with 1-3 customer quotes and faces to demonstrate real customer sati
 <Testimonials />
 ```
 
-## Sample Data
+## Sample Data (V2 — Seminole & Volusia FL Only)
 | Name | Location | Quote |
 |------|----------|-------|
-| Sarah M. | Austin, TX | "Our water has never tasted better. The installation was quick and professional." |
-| Mike T. | Denver, CO | "Best investment we've made for our home. The difference is night and day." |
-| Lisa K. | Portland, OR | "We noticed the improvement immediately. Highly recommend their service!" |
+| Sarah M. | Sanford, FL | "Our water has never tasted better. The installation was quick and professional." |
+| Mike T. | Altamonte Springs, FL | "Best investment we've made for our home. The difference is night and day." |
+| Lisa K. | Deltona, FL | "We noticed the improvement immediately. Highly recommend their service!" |
 
 ## Accessibility
 - Quote marks are decorative (aria-hidden)

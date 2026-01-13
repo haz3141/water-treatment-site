@@ -1,41 +1,57 @@
 # Design Tokens
 
+> **V2 LOCK**
+> - Status: Locked
+> - Date: 2026-01-13
+> - Source: Designer-OS V2 Lock (docs/designer-os-v2-lock)
+
 Canonical token definitions for the Water Treatment Site. All theming is token-driven; palette swaps require only changing token values, never component refactors.
 
 ---
 
 ## Brand Foundation
 
-- **Metaphor**: Leaf + Water Droplet = purity, health, nature + engineering.
-- **Visual Tone**: Clean, modern, calm, premium residential.
-- **Emotional Signal**: Trust → Safety → Clarity → Ease.
+- **Brand Name**: Eco One Water (canonical)
+- **Metaphor**: Leaf + Water Droplet = purity, health, nature + engineering
+- **Visual Tone**: Clean, modern, calm, premium residential
+- **Emotional Signal**: Trust → Safety → Clarity → Ease
+- **Target Audience**: Homeowners 30–65
 
 ---
 
 ## Color System
 
-### Strategy
+### Governance
 
-- One dominant primary, one supporting accent, neutral surfaces.
-- No loud saturation; high contrast for accessibility + conversions.
-- Designed for A/B palette testing without refactoring components.
-- Palette swaps only change tokens; never require component-by-component refactors.
+- **Semantic tokens only**: Components reference tokens (e.g., `--color-primary`), never raw hex values
+- **No hardcoded section colors**: Section backgrounds use only `--color-surface`, `--color-card`, or `--color-primary-soft`
+- **Palette swaps are value-only**: Switching palettes changes token values; no component refactors required
 
-### Palette A: Clean Blue (Default)
+### Palette Registry
+
+| Palette | Name | Status |
+|---------|------|--------|
+| A | Coastal Teal + Clean Sand | **Default (Active)** |
+| B | Green First | Inactive alternate |
+| C | Dark Navy Premium | Inactive alternate |
+
+### Palette A: Coastal Teal + Clean Sand (Default)
 
 | Token | Value | Usage |
 |-------|-------|-------|
-| `--color-primary` | `#1E6FD9` | CTAs, links, step numbers |
-| `--color-primary-soft` | `#E8F1FC` | Hero bg, highlights |
-| `--color-accent` | `#4ECFD9` | Icons, badges, micro accents |
-| `--color-success` | `#3FAE6A` | Trust checks, guarantees |
-| `--color-surface` | `#F8FAFC` | Page background |
+| `--color-primary` | `#12A594` | CTAs, links, step numbers |
+| `--color-primary-hover` | `#0E9888` | CTA hover states |
+| `--color-primary-active` | `#067A6F` | CTA active/pressed states |
+| `--color-primary-soft` | `#E7F9F5` | Hero bg, highlights, subtle tints |
+| `--color-accent` | `#0091FF` | Icons, badges, micro accents |
+| `--color-surface` | `#FDFDFC` | Page background |
 | `--color-card` | `#FFFFFF` | Cards, forms |
-| `--color-text-main` | `#1F2937` | Headings |
-| `--color-text-muted` | `#6B7280` | Body/labels |
-| `--color-border` | `#E5E7EB` | Dividers |
+| `--color-text-main` | `#11181C` | Headings (no true-black) |
+| `--color-text-muted` | `#687076` | Body/labels |
+| `--color-border` | `#DBDBD7` | Dividers |
+| `--color-success` | `#30A46C` | Trust checks, guarantees |
 
-### Palette B: Green First (Placeholder)
+### Palette B: Green First (Inactive Alternate)
 
 Drop-in token set with leaf-dominant theming. Final hex values to be defined during A/B testing phase.
 
@@ -51,7 +67,7 @@ Drop-in token set with leaf-dominant theming. Final hex values to be defined dur
 | `--color-text-muted` | TBD | Body/labels |
 | `--color-border` | TBD | Dividers |
 
-### Palette C: Dark Navy Premium (Placeholder)
+### Palette C: Dark Navy Premium (Inactive Alternate)
 
 Drop-in token set with premium dark navy theming. Final hex values to be defined during A/B testing phase.
 
@@ -71,29 +87,40 @@ Drop-in token set with premium dark navy theming. Final hex values to be defined
 
 ## Typography System
 
-### Font Stack
+### Typography Intent
 
-| Role | Font | Notes |
-|------|------|-------|
-| Headings | Geist Sans | Primary brand font for all headings |
-| Body | Inter | Clean, readable body copy |
-| UI/Meta | Inter | No third font; consistency with body |
+- **Tone**: Calm, authoritative, premium residential
+- **Audience**: Homeowners 30–65; no "basic default font" feel
+- **Text Color**: No true-black text (`--color-text-main` is `#11181C`)
+- **Hierarchy**: Clear distinction between heading levels
+- **Readability**: Optimized for long-form content
 
-### Type Scale
+### Font Candidates (V2 — Not Final)
 
-| Level | Size/Line-Height |
-|-------|------------------|
-| H1 | 48px / 56px |
-| H2 | 36px / 44px |
-| H3 | 24px / 32px |
-| Body | 16px / 24px |
-| Small | 14px / 20px |
+Final font families will be selected in implementation. These are production-safe candidates:
+
+| Option | Headings | Body |
+|--------|----------|------|
+| 1 | IBM Plex Sans | Source Sans 3 |
+| 2 | Geist Sans | Inter |
+| 3 | Manrope | Inter |
+
+### Type Scale (V2 Locked)
+
+| Level | Size | Line-Height |
+|-------|------|-------------|
+| H1 | 48px | 1.10–1.15 |
+| H2 | 36px | ~1.15 |
+| H3 | 24px | ~1.25 |
+| Body | 17–18px | ~1.6 |
+| Small/Meta | 14–15px | ~1.5 |
 
 ### Typography Rules
 
-- No custom sizes per section.
-- No arbitrary weight mixing.
-- Headings use max two weights: 600 and 700.
+- No custom sizes per section
+- No arbitrary weight mixing
+- Headings use max two weights: 600 and 700
+- Body uses 400 (regular) weight
 
 ---
 

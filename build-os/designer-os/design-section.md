@@ -1,6 +1,26 @@
 # Design Sections
 
+> **V2 LOCK**
+> - Status: Locked
+> - Date: 2026-01-13
+> - Source: Designer-OS V2 Lock (docs/designer-os-v2-lock)
+
 Modular UI building blocks for the homepage and funnel. All sections follow shell layout rules and use token-driven theming.
+
+---
+
+## Conversion Order (V2 Locked)
+
+The homepage section order is strictly defined for optimal conversion flow:
+
+1. **Header** — Navigation + CTA
+2. **Hero** — Introduce offer, capture attention, trigger CTA
+3. **Trust Badges** — Show credibility fast
+4. **Services** — Explain what we do
+5. **How It Works** — Visualize conversion path
+6. **Testimonials** — Social proof
+7. **Final CTA** — Encourage conversion
+8. **Footer** — Navigation + contact
 
 ---
 
@@ -10,10 +30,12 @@ Modular UI building blocks for the homepage and funnel. All sections follow shel
 
 - **Purpose**: Introduce offer, capture attention, trigger CTA
 - **Layout**: 2-column (text + image) on desktop, stacked on mobile
+- **Composition**: **Z-pattern required** (visual flow must guide to primary CTA)
 - **Content**: Headline, subtext, CTA button, lifestyle image
 - **CTA**: "Get a Free Water Test" (primary color, high contrast)
 - **Image**: Family/homeowner in clean kitchen setting (see [design-assets.md](./design-assets.md))
-- **Overlay**: Soft blue gradient (top → bottom), optional water ripple SVG at bottom
+- **Overlay**: Soft gradient using `--color-primary-soft` (top → bottom), optional wave SVG at bottom
+- **Droplet Overlay**: Not used in hero; droplet mark retained as brand asset for other uses
 
 ### Trust Badges Section (`section-trust-badges`)
 
@@ -21,12 +43,17 @@ Modular UI building blocks for the homepage and funnel. All sections follow shel
 - **Layout**: Horizontal logo strip, centered
 - **Content**: Google reviews, BBB, WQA, certifications
 - **Icon Style**: Monochrome or muted brand color
-- **Spacing**: Consistent gap between badges
+- **Spacing**: Consistent gap between badges; references [design-shell.md](./design-shell.md) spacing standards
 
 ### Services Section (`section-services`)
 
-- **Purpose**: Explain what we do
-- **Layout**: Grid of 3 cards
+- **Purpose**: Explain full service offering
+- **Layout**: Grid of 4 cards
+- **Required Services**:
+  - Water Softeners
+  - Filtration Systems
+  - Reverse Osmosis
+  - **Well Water Treatment** (V2 required)
 - **Card Structure**: Icon (top-left), title, benefit text
 - **Icon Style**: Outline only, rounded strokes, consistent stroke weight
 - **Image Type**: Simple vector or illustration (see [design-assets.md](./design-assets.md))
@@ -34,11 +61,11 @@ Modular UI building blocks for the homepage and funnel. All sections follow shel
 ### How It Works Section (`section-how-it-works`)
 
 - **Purpose**: Visualize conversion path
-- **Layout**: 3 steps with numbered circles + icons
-- **Content**: "Test → Plan → Install"
+- **Layout**: 3–4 steps with numbered circles + icons
+- **Content**: "Test → Plan → Install" (or extended with "Enjoy")
 - **Number Style**: Step number in circle using `--color-primary`
 - **Icon Style**: Outline only, rounded strokes, matching stroke weight
-- **Motion**: Step highlight on scroll (optional)
+- **Motion**: Step highlight on scroll (optional, Tier-1)
 
 ### Testimonials Section (`section-testimonials`)
 
@@ -47,6 +74,7 @@ Modular UI building blocks for the homepage and funnel. All sections follow shel
 - **Card Content**: Quote, person name, location
 - **Image**: Real photo or professional stock headshot (see [design-assets.md](./design-assets.md))
 - **Styling**: Card background uses `--color-card`, subtle shadow
+- **Locality Constraint (V2)**: Testimonials must reference cities in **Seminole & Volusia counties, Florida** only (e.g., Sanford, Altamonte Springs, Lake Mary, Deltona, DeBary, Daytona Beach, Ormond Beach)
 
 ### Final CTA Section (`section-final-cta`)
 
@@ -55,6 +83,22 @@ Modular UI building blocks for the homepage and funnel. All sections follow shel
 - **CTA**: "Get a Free Water Test" (same as hero)
 - **Background**: `--color-primary-soft` or gradient
 - **No imagery**: Keep focus on action
+
+---
+
+## Navigation Behavior (V2 Locked)
+
+### Header Navigation
+
+- Links must map to real anchors (e.g., `#services`, `#testimonials`) or future routes
+- **No dead nav**: Every link must resolve to a valid target
+- CTA button always present and visible
+
+### Footer Navigation
+
+- Repeats or summarizes top-level nav
+- Links must map to real anchors or routes
+- **No dead nav**: Every link must resolve to a valid target
 
 ---
 
@@ -112,7 +156,7 @@ All icons across sections follow these rules:
 
 ## Motion by Section
 
-Motion follows shell principles (calm, slow-ease, never blocking).
+Motion follows shell principles (calm, slow-ease, never blocking). **Tier-1 only.**
 
 | Section | Motion |
 |---------|--------|
